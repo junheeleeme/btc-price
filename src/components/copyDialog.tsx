@@ -52,7 +52,7 @@ const CopyDialog = ({ open, setOpen }: dialogType) => {
               target="_blank"
               title="react-icon"
             >
-              LottieFiles
+              React-Icon
             </Link>
           </Typography>
           <Typography component="p">
