@@ -26,7 +26,7 @@ code {
 }
 
 .main {
-  min-height: calc(100vh - 114px);
+  min-height: calc(100vh - 134px);
   padding-bottom: 120px !important;
 }
 
@@ -55,7 +55,7 @@ code {
     height: 76px;
   }
   .main {
-    min-height: calc(100vh - 86px);
+    min-height: calc(100vh - 126px);
   }
 }
 
