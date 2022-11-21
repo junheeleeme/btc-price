@@ -1,6 +1,7 @@
 import { cryptos } from "../crypto";
 import { store } from "../store/store";
 import { update } from "../store";
+import { toast } from "react-toastify";
 
 const currency = [
   { ticket: "macjjuni" },
@@ -21,6 +22,7 @@ socket.binaryType = "arraybuffer";
 const initSocket = () => {
   socket.onopen = () => {
     socket.send(JSON.stringify(currency));
+    toast.success("WebSocket 연결 성공!");
   };
 
   socket.onmessage = (evt) => {
@@ -38,7 +40,9 @@ const initSocket = () => {
   };
 
   socket.onerror = (evt) => {
-    console.log(evt);
+    socket.close();
+    toast.error("WebSocket Error!");
+    console.error(evt);
   };
 };
 

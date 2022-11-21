@@ -95,3 +95,6 @@ code {
 .css-1t7y2o5-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
   background-color: rgba(244, 157, 26, 0.18) !important;
 }
+.Toastify__toast-container--top-right {
+  top: 5em !important;
+}

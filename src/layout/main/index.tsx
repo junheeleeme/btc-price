@@ -65,14 +65,19 @@ const Main = () => {
     }
   }, [selectCrypto]);
 
-  // 시세 변동 시 계산 => 코인 개수를 기준으로 가격 변환
   useEffect(() => {
+    // 기준 코인이 변경 됐을 때 초기화
+    initCrypto(cryptoList);
+  }, [select]);
+
+  useEffect(() => {
+    // 시세 변동 시 계산 => 코인 개수를 기준으로 가격 변환
+    initCrypto(cryptoList);
     if (!load) {
       const isChk = cryptoList.find((c) => c.price === 0);
-      if (isChk === undefined) setLoad(true);
+      isChk === undefined && setLoad(true);
     }
-    initCrypto(cryptoList);
-  }, [cryptoList, select]);
+  }, [cryptoList]);
 
   // 크립토 변경
   // const handleCrypto = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -150,7 +155,7 @@ const Main = () => {
     setStandard(e.target.checked);
   };
 
-  // if (!load) return <Spinner />;
+  if (!load) return <Spinner />;
 
   return (
     <Container
