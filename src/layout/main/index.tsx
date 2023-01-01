@@ -188,7 +188,7 @@ const Main = () => {
                 ml={1.5}
                 fontWeight="bold"
                 fontSize="large"
-                color="#fff"
+                color={c.color}
               >
                 {c.value.toUpperCase()}
               </Typography>

@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Box, AppBar, Toolbar, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
+// import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 
 import Logo from "../../components/logo";
 
