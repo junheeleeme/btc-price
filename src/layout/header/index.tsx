@@ -10,7 +10,10 @@ import Logo from "../../components/logo";
 const Header = () => {
   return (
     <>
-      <AppBar position="static" sx={{ boxShadow: "none", background: "#fff" }}>
+      <AppBar
+        position="static"
+        sx={{ boxShadow: "none", background: "inherit" }}
+      >
         <Toolbar
           className="header-wrap"
           sx={{
@@ -36,7 +39,7 @@ const Header = () => {
             {/* <NetStatus /> */}
             <IconButton
               title="GitHub Repository"
-              href="https://github.com/junheeleeme/btc-price"
+              href="https://github.com/juni-btc/btc-price"
               target="_blank"
               size="small"
               sx={{

@@ -175,21 +175,6 @@ const Main = () => {
           width: "400px",
         }}
       >
-        {/* <TextField
-          id="outlined-select-currency"
-          select
-          defaultValue={"btc"}
-          label="Crypto"
-          onChange={handleCrypto}
-          sx={{ textAlign: "center" }}
-        >
-          {cryptos.map((c) => (
-            <MenuItem key={c.value} value={c.value}>
-              {c.label}
-            </MenuItem>
-          ))}
-        </TextField> */}
-
         <ToggleButtonGroup
           exclusive
           aria-label="text alignment"
@@ -199,7 +184,12 @@ const Main = () => {
           {cryptos.map((c) => (
             <ToggleButton key={c.value} value={c.value} sx={{ width: "100%" }}>
               {c.icon}
-              <Typography ml={1.5} fontWeight="bold" fontSize="large">
+              <Typography
+                ml={1.5}
+                fontWeight="bold"
+                fontSize="large"
+                color="#fff"
+              >
                 {c.value.toUpperCase()}
               </Typography>
             </ToggleButton>
@@ -216,12 +206,20 @@ const Main = () => {
           <FormGroup ref={chkRef} sx={{ userSelect: "none" }}>
             <FormControlLabel
               control={
-                <Checkbox checked={standard} onChange={handleStandard} />
+                <Checkbox
+                  checked={standard}
+                  onChange={handleStandard}
+                  sx={{ color: "#fff" }}
+                />
               }
               label="가격 기준"
             />
           </FormGroup>
-          <Typography align="right" component="h3" sx={{ fontWeight: "700" }}>
+          <Typography
+            align="right"
+            component="h3"
+            sx={{ color: "#fff", fontWeight: "700" }}
+          >
             {`1 ${selectCrypto.value.toUpperCase()} = ${selectCrypto.price.toLocaleString()} KRW`}
           </Typography>
         </Box>

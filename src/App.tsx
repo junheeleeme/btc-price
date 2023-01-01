@@ -4,7 +4,7 @@ import Footer from "./layout/footer";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 
-function App() {
+const App = () => {
   return (
     <Provider store={store}>
       <div id="btc-forever">
@@ -14,6 +14,6 @@ function App() {
       </div>
     </Provider>
   );
-}
+};
 
 export default App;

@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+#root {
+  background-color: #393e46;
+}
+
 #btc-forever {
   position: relative;
   width: 100vw;

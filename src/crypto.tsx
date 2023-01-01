@@ -24,8 +24,8 @@ export const cryptos: cryptoProp[] = [
     value: "eth",
     ticker: "KRW-ETH",
     price: 0,
-    icon: <FaEthereum size="28" color="#3c3c3d" />,
-    color: "#3c3c3d",
+    icon: <FaEthereum size="28" color="#9a9a9a" />,
+    color: "#9a9a9a",
   },
   {
     label: "XRP(Ripple)",
