@@ -39,7 +39,7 @@ const Header = () => {
             {/* <NetStatus /> */}
             <IconButton
               title="GitHub Repository"
-              href="https://github.com/juni-btc/btc-price"
+              href="https://github.com/macjjuni/btc-price"
               target="_blank"
               size="small"
               sx={{
