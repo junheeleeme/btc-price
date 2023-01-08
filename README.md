@@ -30,7 +30,7 @@
 
 <img src="https://user-images.githubusercontent.com/38034518/210180728-da9c52e4-5113-49d0-a31f-990e8a7bf137.png" alt="btc-price initial Image" />
 
-## 🗒️ 기타 정보
+## 🗒️ 리소스 정보
 
 - 시세: 업비트 Docs
 - 애니메이션: LottieFiles
